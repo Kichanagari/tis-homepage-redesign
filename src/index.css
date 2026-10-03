@@ -8,9 +8,9 @@
   --text: #14213d;
   --muted: #566074;
   --border: #e1e5ee;
-  --primary: #14213d;
+  --primary: #c51818;
   --on-primary: #ffffff;
-  --accent: #f4b400;
+  --accent: #aebdbb;
 }
 
 /* Dark theme: same tokens, new values. Toggled by the "dark" class on <html>. */
