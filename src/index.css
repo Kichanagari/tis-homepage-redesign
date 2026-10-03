@@ -1,1 +1,65 @@
 @import 'tailwindcss';
+
+/* Colour tokens. Replace the hex values with the real TIS colours
+   (inspect tis.edu.in in DevTools). Components only use the token names. */
+:root {
+  --bg: #ffffff;
+  --surface: #f4f6fb;
+  --text: #14213d;
+  --muted: #566074;
+  --border: #e1e5ee;
+  --primary: #14213d;
+  --on-primary: #ffffff;
+  --accent: #f4b400;
+}
+
+/* Dark theme: same tokens, new values. Toggled by the "dark" class on <html>. */
+.dark {
+  --bg: #0d1220;
+  --surface: #151c30;
+  --text: #eef1f8;
+  --muted: #a3adc2;
+  --border: #263050;
+  --primary: #f4b400;
+  --on-primary: #14213d;
+  --accent: #f4b400;
+}
+
+/* Maps the tokens to Tailwind utilities: bg-bg, bg-surface, text-muted, ... */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Added by CustomCursor only on devices with a fine pointer (mouse). */
+html.custom-cursor,
+html.custom-cursor a,
+html.custom-cursor button {
+  cursor: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
