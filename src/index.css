@@ -10,7 +10,7 @@
   --border: #e1e5ee;
   --primary: #c51818;
   --on-primary: #ffffff;
-  --accent: #aebdbb;
+  --accent: #5c4c55;
 }
 
 /* Dark theme: same tokens, new values. Toggled by the "dark" class on <html>. */
@@ -22,7 +22,7 @@
   --border: #263050;
   --primary: #f4b400;
   --on-primary: #14213d;
-  --accent: #f4b400;
+  --accent: #5c5953;
 }
 
 /* Maps the tokens to Tailwind utilities: bg-bg, bg-surface, text-muted, ... */

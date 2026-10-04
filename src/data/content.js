@@ -6,6 +6,7 @@
 // (no spaces). Add an item here only after its section exists.
 export const navItems = [
   { label: 'About', href: '#about' },
+  { label: 'Academics', href: '#academics' },
   { label: 'Sports', href: '#sports' },
   { label: 'Rankings', href: '#rankings' },
   { label: 'Reviews', href: '#testimonials' },
@@ -34,8 +35,7 @@ export const stats = [
   { value: '6:1', label: 'Student-teacher ratio', icon: 'Users' },
 ]
 
-// Not used by any component yet. Build an AcademicsSection to display it,
-// then add { label: 'Academics', href: '#academics' } to navItems.
+// Displayed by AcademicsSection.
 // Replace each text with the exact copy from the Academics page of tis.edu.in.
 export const academics = {
   title: 'Academics',

@@ -3,6 +3,7 @@ import ScrollProgress from './components/animation/ScrollProgress'
 import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
 import AboutSection from './components/sections/AboutSection'
+import AcademicsSection from './components/sections/AcademicsSection'
 import AdmissionSection from './components/sections/AdmissionSection'
 import HeroSection from './components/sections/HeroSection'
 import RankingsSection from './components/sections/RankingsSection'
@@ -27,6 +28,7 @@ export default function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <AcademicsSection />
         <SportsSection />
         <RankingsSection />
         <TestimonialsSection />
