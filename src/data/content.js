@@ -1,6 +1,9 @@
 // All page content lives here, so components only handle layout.
-// Replace paraphrased text with the exact copy from tis.edu.in.
+// Paste exact copy from tis.edu.in wherever a comment says so.
+// Keep the export names and the key names: components read them directly.
 
+// Menu links. Each href must match the id of a section in App.jsx
+// (no spaces). Add an item here only after its section exists.
 export const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Sports', href: '#sports' },
@@ -19,16 +22,30 @@ export const hero = {
 }
 
 export const about = {
-  title: 'A school that chooses you',
+  title: 'Our History',
   text: 'Established in 2012 under the aegis of Rishabh Educational Trust, TIS offers modern facilities and a nurturing environment where students grow in academics, sports, arts and leadership.',
 }
 
+// Used by AboutSection. The icon must be one of: Trees, Trophy, HeartPulse, Users.
 export const stats = [
   { value: '22', label: 'Acre pollution-free campus', icon: 'Trees' },
   { value: '16+', label: 'Olympic sports', icon: 'Trophy' },
   { value: '24x7', label: 'Medical assistance', icon: 'HeartPulse' },
   { value: '6:1', label: 'Student-teacher ratio', icon: 'Users' },
 ]
+
+// Not used by any component yet. Build an AcademicsSection to display it,
+// then add { label: 'Academics', href: '#academics' } to navItems.
+// Replace each text with the exact copy from the Academics page of tis.edu.in.
+export const academics = {
+  title: 'Academics',
+  items: [
+    { title: 'Pedagogy', text: 'Add the exact text about pedagogy here.' },
+    { title: 'Curriculum', text: 'Add the exact text about the curriculum here.' },
+    { title: 'Streams Offered', text: 'Add the exact text about the streams offered here.' },
+    { title: 'International Tie-Ups', text: 'Add the exact text about international tie-ups here.' },
+  ],
+}
 
 export const sports = [
   'Archery',
@@ -56,6 +73,7 @@ export const rankings = [
   { rank: '#4', place: 'In India', source: 'Education Today' },
 ]
 
+// Short paraphrases. Replace with the exact parent reviews from tis.edu.in.
 export const testimonials = [
   {
     quote: 'Sports, academics and activities together helped our child know himself better.',
