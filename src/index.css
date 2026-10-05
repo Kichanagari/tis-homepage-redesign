@@ -10,7 +10,7 @@
   --border: #e1e5ee;
   --primary: #c51818;
   --on-primary: #ffffff;
-  --accent: #24222333;
+  --accent: #0a0a0a33;
 }
 
 /* Dark theme: same tokens, new values. Toggled by the "dark" class on <html>. */

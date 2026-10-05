@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import logo from '../../assets/tis-logo.jpg'
 import { hero, navItems } from '../../data/content'
 import ThemeToggle from '../animation/ThemeToggle'
 import Button from '../ui/Button'
@@ -15,9 +16,13 @@ export default function Navbar({ theme, onToggleTheme }) {
         aria-label="Main"
         className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3"
       >
-        <a href="#top" className="font-display text-xl font-bold">
-          TIS
-          <span className="sr-only"> Tulas International School</span>
+        {/* The white pad keeps the logo readable on the dark theme. */}
+        <a href="#top" className="rounded-md bg-white px-2 py-1">
+         <img
+            src={logo}
+            alt="Tulas International School"
+            className="h-9 w-auto"
+         />
         </a>
 
         <ul className="hidden items-center gap-6 md:flex">
